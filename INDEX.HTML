@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Interativo - Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <h1>Blog Interativo</h1>
+            <p>Informe dois números para calcular os resultados!</p>
+        </header>
+
+        <section class="input-section">
+            <div class="input-group">
+                <label for="numero1">Número 1:</label>
+                <input type="number" id="num1" placeholder="Digite o primeiro número">
+            </div>
+            <div class="input-group">
+                <label for="numero2">Número 2:</label>
+                <input type="number" id="num2" placeholder="Digite o segundo número">
+            </div>
+            <button id="btnCalcular" class="calculate-button" onclick="calcularResultados()">Calcular</button>
+        </section>
+
+        <section class="results-section">
+            <div class="result-card tabuada">
+                <h3 class="card-title">Tabuada de Multiplicação</h3>
+                <p id="resultadoTabuada" class="card-status">Aguardando entrada...</p>
+            </div>
+
+            <div class="result-card fatorial">
+                <h3 class="card-title">Fatorial do Número 1</h3>
+                <p id="resultadoFatorial" class="card-status">Aguardando entrada...</p>
+            </div>
+
+            <div class="result-card par-impar">
+                <h3 class="card-title">Par ou Ímpar</h3>
+                <p id="resultadoParImpar" class="card-status">Aguardando entrada...</p>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
